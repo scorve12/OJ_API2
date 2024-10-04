@@ -21,4 +21,3 @@ qrcode==7.4.2
 raven==6.10.0
 XlsxWriter==3.1.9
 drf-yasg==1.21.7
-djangorestframework==3.15.2
