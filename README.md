@@ -83,3 +83,284 @@ Modern browsers(chrome, firefox) and Internet Explorer 10+.
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
+
+```
+OnlineJudge
+├─ .dockerignore
+├─ .flake8
+├─ .git
+│  ├─ config
+│  ├─ description
+│  ├─ FETCH_HEAD
+│  ├─ HEAD
+│  ├─ hooks
+│  │  ├─ applypatch-msg.sample
+│  │  ├─ commit-msg.sample
+│  │  ├─ fsmonitor-watchman.sample
+│  │  ├─ post-update.sample
+│  │  ├─ pre-applypatch.sample
+│  │  ├─ pre-commit.sample
+│  │  ├─ pre-merge-commit.sample
+│  │  ├─ pre-push.sample
+│  │  ├─ pre-rebase.sample
+│  │  ├─ pre-receive.sample
+│  │  ├─ prepare-commit-msg.sample
+│  │  ├─ push-to-checkout.sample
+│  │  ├─ sendemail-validate.sample
+│  │  └─ update.sample
+│  ├─ index
+│  ├─ info
+│  │  └─ exclude
+│  ├─ logs
+│  │  ├─ HEAD
+│  │  └─ refs
+│  │     ├─ heads
+│  │     │  └─ master
+│  │     └─ remotes
+│  │        └─ origin
+│  │           └─ HEAD
+│  ├─ objects
+│  │  ├─ info
+│  │  └─ pack
+│  │     ├─ pack-a796902ac4076dc1d805174990ce602392e5f83b.idx
+│  │     ├─ pack-a796902ac4076dc1d805174990ce602392e5f83b.pack
+│  │     └─ pack-a796902ac4076dc1d805174990ce602392e5f83b.rev
+│  ├─ packed-refs
+│  └─ refs
+│     ├─ heads
+│     │  └─ master
+│     ├─ remotes
+│     │  └─ origin
+│     │     └─ HEAD
+│     └─ tags
+├─ .github
+│  ├─ issue_template.md
+│  └─ workflows
+│     └─ release.yml
+├─ .gitignore
+├─ .travis.yml
+├─ account
+│  ├─ decorators.py
+│  ├─ middleware.py
+│  ├─ migrations
+│  │  ├─ 0001_initial.py
+│  │  ├─ 0002_auto_20170209_1028.py
+│  │  ├─ 0003_userprofile_total_score.py
+│  │  ├─ 0005_auto_20170830_1154.py
+│  │  ├─ 0006_user_session_keys.py
+│  │  ├─ 0008_auto_20171011_1214.py
+│  │  ├─ 0009_auto_20171125_1514.py
+│  │  ├─ 0010_auto_20180501_0436.py
+│  │  ├─ 0011_auto_20180501_0456.py
+│  │  ├─ 0012_userprofile_language.py
+│  │  └─ __init__.py
+│  ├─ models.py
+│  ├─ serializers.py
+│  ├─ tasks.py
+│  ├─ templates
+│  ├─ tests.py
+│  ├─ urls
+│  │  ├─ admin.py
+│  │  ├─ oj.py
+│  │  └─ __init__.py
+│  ├─ views
+│  │  ├─ admin.py
+│  │  ├─ oj.py
+│  │  └─ __init__.py
+│  └─ __init__.py
+├─ announcement
+│  ├─ migrations
+│  │  ├─ 0001_initial.py
+│  │  ├─ 0002_auto_20171011_1214.py
+│  │  ├─ 0003_auto_20180501_0436.py
+│  │  └─ __init__.py
+│  ├─ models.py
+│  ├─ serializers.py
+│  ├─ tests.py
+│  ├─ urls
+│  │  ├─ admin.py
+│  │  ├─ oj.py
+│  │  └─ __init__.py
+│  ├─ views
+│  │  ├─ admin.py
+│  │  ├─ oj.py
+│  │  └─ __init__.py
+│  └─ __init__.py
+├─ conf
+│  ├─ migrations
+│  │  ├─ 0001_initial.py
+│  │  ├─ 0002_auto_20171011_1214.py
+│  │  ├─ 0003_judgeserver_is_disabled.py
+│  │  ├─ 0004_auto_20180501_0436.py
+│  │  └─ __init__.py
+│  ├─ models.py
+│  ├─ serializers.py
+│  ├─ tests.py
+│  ├─ urls
+│  │  ├─ admin.py
+│  │  ├─ oj.py
+│  │  └─ __init__.py
+│  ├─ views.py
+│  └─ __init__.py
+├─ contest
+│  ├─ migrations
+│  │  ├─ 0001_initial.py
+│  │  ├─ 0002_auto_20170209_0845.py
+│  │  ├─ 0003_auto_20170217_0820.py
+│  │  ├─ 0004_auto_20170717_1324.py
+│  │  ├─ 0005_auto_20170823_0918.py
+│  │  ├─ 0006_auto_20171011_1214.py
+│  │  ├─ 0007_contestannouncement_visible.py
+│  │  ├─ 0008_contest_allowed_ip_ranges.py
+│  │  ├─ 0009_auto_20180501_0436.py
+│  │  ├─ 0010_auto_20190326_0201.py
+│  │  └─ __init__.py
+│  ├─ models.py
+│  ├─ serializers.py
+│  ├─ tests.py
+│  ├─ urls
+│  │  ├─ admin.py
+│  │  ├─ oj.py
+│  │  └─ __init__.py
+│  ├─ views
+│  │  ├─ admin.py
+│  │  ├─ oj.py
+│  │  └─ __init__.py
+│  └─ __init__.py
+├─ data
+│  └─ public
+│     └─ website
+│        └─ favicon.ico
+├─ deploy
+│  ├─ entrypoint.sh
+│  ├─ health_check.py
+│  ├─ nginx
+│  │  ├─ api_proxy.conf
+│  │  ├─ https_redirect.conf
+│  │  ├─ locations.conf
+│  │  └─ nginx.conf
+│  ├─ requirements.txt
+│  ├─ supervisord.conf
+│  └─ test_case_rsync
+│     ├─ Dockerfile
+│     ├─ rsyncd.conf
+│     └─ run.sh
+├─ Dockerfile
+├─ docs
+│  └─ data.json
+├─ fps
+│  ├─ fps.xml
+│  ├─ parser.py
+│  └─ __init__.py
+├─ init_db.sh
+├─ judge
+│  ├─ dispatcher.py
+│  ├─ languages.py
+│  ├─ tasks.py
+│  └─ __init__.py
+├─ LICENSE
+├─ manage.py
+├─ oj
+│  ├─ dev_settings.py
+│  ├─ production_settings.py
+│  ├─ settings.py
+│  ├─ urls.py
+│  ├─ wsgi.py
+│  └─ __init__.py
+├─ options
+│  ├─ migrations
+│  │  ├─ 0001_initial.py
+│  │  ├─ 0002_auto_20180501_0436.py
+│  │  ├─ 0003_migrate_languages_options.py
+│  │  └─ __init__.py
+│  ├─ models.py
+│  ├─ options.py
+│  ├─ tests.py
+│  ├─ views.py
+│  └─ __init__.py
+├─ problem
+│  ├─ migrations
+│  │  ├─ 0001_initial.py
+│  │  ├─ 0002_problem__id.py
+│  │  ├─ 0003_auto_20170217_0820.py
+│  │  ├─ 0004_auto_20170501_0637.py
+│  │  ├─ 0005_auto_20170815_1258.py
+│  │  ├─ 0006_auto_20170823_0918.py
+│  │  ├─ 0008_auto_20170923_1318.py
+│  │  ├─ 0009_auto_20171011_1214.py
+│  │  ├─ 0010_problem_spj_compile_ok.py
+│  │  ├─ 0011_fix_problem_ac_count.py
+│  │  ├─ 0012_auto_20180501_0436.py
+│  │  ├─ 0013_problem_io_mode.py
+│  │  ├─ 0014_problem_share_submission.py
+│  │  └─ __init__.py
+│  ├─ models.py
+│  ├─ serializers.py
+│  ├─ tests.py
+│  ├─ urls
+│  │  ├─ admin.py
+│  │  ├─ oj.py
+│  │  └─ __init__.py
+│  ├─ utils.py
+│  ├─ views
+│  │  ├─ admin.py
+│  │  ├─ oj.py
+│  │  └─ __init__.py
+│  └─ __init__.py
+├─ README-CN.md
+├─ README.md
+├─ run_test.py
+├─ submission
+│  ├─ migrations
+│  │  ├─ 0001_initial.py
+│  │  ├─ 0002_auto_20170509_1203.py
+│  │  ├─ 0005_submission_username.py
+│  │  ├─ 0006_auto_20170830_1154.py
+│  │  ├─ 0007_auto_20170923_1318.py
+│  │  ├─ 0008_submission_ip.py
+│  │  ├─ 0009_delete_user_output.py
+│  │  ├─ 0011_fix_submission_number.py
+│  │  ├─ 0012_auto_20180501_0436.py
+│  │  └─ __init__.py
+│  ├─ models.py
+│  ├─ serializers.py
+│  ├─ tests.py
+│  ├─ urls
+│  │  ├─ admin.py
+│  │  ├─ oj.py
+│  │  └─ __init__.py
+│  ├─ views
+│  │  ├─ admin.py
+│  │  ├─ oj.py
+│  │  └─ __init__.py
+│  └─ __init__.py
+└─ utils
+   ├─ api
+   │  ├─ api.py
+   │  ├─ tests.py
+   │  ├─ _serializers.py
+   │  └─ __init__.py
+   ├─ cache.py
+   ├─ captcha
+   │  ├─ Menlo.ttc
+   │  ├─ timesbi.ttf
+   │  ├─ views.py
+   │  └─ __init__.py
+   ├─ constants.py
+   ├─ management
+   │  ├─ commands
+   │  │  ├─ inituser.py
+   │  │  └─ __init__.py
+   │  └─ __init__.py
+   ├─ migrate_data.py
+   ├─ models.py
+   ├─ serializers.py
+   ├─ shortcuts.py
+   ├─ tasks.py
+   ├─ throttling.py
+   ├─ urls.py
+   ├─ views.py
+   ├─ xss_filter.py
+   └─ __init__.py
+
+```

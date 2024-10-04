@@ -14,4 +14,6 @@ urlpatterns = [
     url(r"^api/", include("submission.urls.oj")),
     url(r"^api/admin/", include("submission.urls.admin")),
     url(r"^api/admin/", include("utils.urls")),
+    # Swagger API 문서 URL 추가
+    url(r'^docs/', include('swagger.urls')),
 ]

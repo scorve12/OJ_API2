@@ -35,6 +35,7 @@ VENDOR_APPS = [
     'rest_framework',
     'django_dramatiq',
     'django_dbconn_retry',
+    'drf_yasg',# swagger
 ]
 
 if production_env:
